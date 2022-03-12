@@ -6,8 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TI_Lab2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900">
-    <Grid x:Name="MainRoot">
+        Title="TI_Lab2" Height="600" Width="900">
+    <Grid x:Name="MainRoot" Background="Aqua">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -19,8 +19,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <materialDesign:Card Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Margin="5" Background="White">
+        <materialDesign:Card Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Margin="5" Background="Orange">
             <StackPanel>
+                <Label Margin="4">Начальное состояние регистра</Label>
                 <TextBox x:Name="InitialString" materialDesign:HintAssist.Hint="Начальное состояние регистра"
                          Margin="5" Height="25"/>
                 <Button x:Name="Encrypt_Button" Margin="5" Height="32" Click="Encrypt_Click">Зашифровать</Button>
